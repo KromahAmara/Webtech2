@@ -1,0 +1,56 @@
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Japanese Restaurant</title>
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'/>
+    <link rel='stylesheet' href='style/bootstrap.min.css' type='text/css'>
+   </head>
+  <body>
+  <div class='well'>
+        <table class='table table-hover'>
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                    <td colspan='3' align='center'>
+                    <h2>Maak uw bestelling</h2></td>
+                    </tr>
+                    <tr>
+                    <td colspan='3'> </td>
+                    </tr>
+                    <tr>
+                    <td>Gerecht :</td>
+                    	<td><input id='gerecht' type='text' size='50'></td>
+                    	</tr>
+                    
+                    <tr>
+                    <td>hoeveelheid:</td>
+                    	<td><input id='hoeveelheid' type='text' size='50'></td>
+                    </tr>
+                    
+                    <tr>
+                    <td>Opmerking :</td>
+                    	<td><textarea id='opmerking' rows="4" cols="60"></textarea></td>
+                    </tr>
+                    <tr>
+                    <td> <input type="hidden" id='geleverd' value="nee"></td>
+                    <tr>
+                        <td colspan='3' align='right'>
+                        <button type='button' class='btn btn-primary' onClick='createDoc()'>Bestel</button>
+                        </td>
+                    </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <br/>
+        <div id='output'></div>
+  </div>
+  </body>
+    <script src='scripts/jquery-2.1.4.min.js'></script>
+    <script src='scripts/main.js'></script>
+    <script src='scripts/bootstrap.min.js'></script>
+    <script src='scripts/typeahead.bundle.min.js'></script>
+</html>

@@ -1,0 +1,4 @@
+Classe Recipe aangemaakt in de lib folder
+Dan referentie tussen de classe en ruby on rails gelegd in applications.rb
+En dan de klasse vanuit de controller oproepen om een instantie te maken en dat slaag ik op in een object recepteb
+Object recepten stuur ik dan Door naar mijn view

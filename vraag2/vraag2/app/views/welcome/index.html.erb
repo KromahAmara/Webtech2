@@ -1,0 +1,17 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+<% if @recept == nil %>
+    <% @recepten.each_with_index do |recept, index|%>
+        <ul>
+            <li><a href=<%= index %>><%= recept.getNaam %></a></li>
+        </ul>
+    <% end %>
+<% else %>
+<ul>
+   <li>Naam: <%= @recept.getNaam %></li> 
+    <li>Prijs: <%= @recept.getPrijs %></li>
+    <li>Ingredienten: <%= @recept.getIngredienten %></li>
+</ul>
+<b><%= link_to 'Terug', root_url %></b>
+<% end %>
+
